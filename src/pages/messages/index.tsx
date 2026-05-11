@@ -1,6 +1,6 @@
 import { View, Text } from '@tarojs/components';
 import { useState } from 'react';
-import { Bell as BellIcon, CircleAlert as CircleAlertIcon, CircleCheck as CircleCheckIcon, Clock as ClockIcon, MessageCircle as MessageCircleIcon, ChevronRight as ChevronRightIcon, Settings as SettingsIcon } from 'lucide-react-taro';
+import { Bell, CircleAlert, CircleCheck, Clock, MessageCircle, ChevronRight, Settings } from 'lucide-react-taro';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import './index.css';
@@ -79,15 +79,15 @@ const MessagesPage = () => {
   const getMessageIcon = (type: string) => {
     switch (type) {
       case 'alarm':
-        return <CircleAlertIcon size={24} color="#ef4444" />;
+        return <CircleAlert size={24} color="#ef4444" />;
       case 'reminder':
-        return <BellIcon size={24} color="#f59e0b" />;
+        return <Bell size={24} color="#f59e0b" />;
       case 'success':
-        return <CircleCheckIcon size={24} color="#22c55e" />;
+        return <CircleCheck size={24} color="#22c55e" />;
       case 'system':
-        return <SettingsIcon size={24} color="#6b7280" />;
+        return <Settings size={24} color="#6b7280" />;
       default:
-        return <MessageCircleIcon size={24} color="#6b7280" />;
+        return <MessageCircle size={24} color="#6b7280" />;
     }
   };
 
@@ -147,7 +147,7 @@ const MessagesPage = () => {
             <Text className="block text-gray-400 text-sm mt-1">服药提醒与告警信息</Text>
           </View>
           <View className="relative">
-            <BellIcon size={24} color="white" />
+            <Bell size={24} color="white" />
             {unreadCount > 0 && (
               <View className="absolute -top-1 -right-1 min-w-5 h-5 bg-red-500 rounded-full flex items-center justify-center px-1">
                 <Text className="block text-white text-xs">{unreadCount > 9 ? '9+' : unreadCount}</Text>
@@ -232,13 +232,13 @@ const MessagesPage = () => {
                       <Text className="block text-gray-600 text-sm mb-2">{message.content}</Text>
                       <View className="flex flex-row items-center gap-3">
                         <View className="flex flex-row items-center gap-1">
-                          <ClockIcon size={12} color="#9ca3af" />
+                          <Clock size={12} color="#9ca3af" />
                           <Text className="block text-gray-400 text-xs">{message.time}</Text>
                         </View>
                         <Text className="block text-gray-400 text-xs">{message.date}</Text>
                       </View>
                     </View>
-                    <ChevronRightIcon size={20} color="#d1d5db" />
+                    <ChevronRight size={20} color="#d1d5db" />
                   </View>
                 </CardContent>
               </Card>
@@ -247,7 +247,7 @@ const MessagesPage = () => {
         ) : (
           <Card>
             <CardContent className="p-8 text-center">
-              <BellIcon size={48} color="#d1d5db" />
+              <Bell size={48} color="#d1d5db" />
               <Text className="block text-gray-400 mt-4">暂无消息</Text>
             </CardContent>
           </Card>
@@ -261,15 +261,15 @@ const MessagesPage = () => {
             <Text className="block text-gray-900 font-bold mb-3">快捷操作</Text>
             <View className="flex flex-row gap-3">
               <View className="flex-1 bg-orange-50 rounded-xl p-3 text-center cursor-pointer">
-                <BellIcon size={24} color="#f59e0b" />
+                <Bell size={24} color="#f59e0b" />
                 <Text className="block text-gray-700 text-sm mt-1">设置提醒</Text>
               </View>
               <View className="flex-1 bg-green-50 rounded-xl p-3 text-center cursor-pointer">
-                <CircleCheckIcon size={24} color="#22c55e" />
+                <CircleCheck size={24} color="#22c55e" />
                 <Text className="block text-gray-700 text-sm mt-1">确认服药</Text>
               </View>
               <View className="flex-1 bg-blue-50 rounded-xl p-3 text-center cursor-pointer">
-                <SettingsIcon size={24} color="#3b82f6" />
+                <Settings size={24} color="#3b82f6" />
                 <Text className="block text-gray-700 text-sm mt-1">消息设置</Text>
               </View>
             </View>
