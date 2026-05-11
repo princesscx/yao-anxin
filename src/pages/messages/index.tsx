@@ -1,12 +1,6 @@
 import { View, Text } from '@tarojs/components';
 import { useState } from 'react';
-import { Bell as BellIcon } from 'lucide-react-taro/icons/bell';
-import { CircleAlert as CircleAlertIcon } from 'lucide-react-taro/icons/circle-alert';
-import { CircleCheck as CircleCheckIcon } from 'lucide-react-taro/icons/circle-check';
-import { Clock as ClockIcon } from 'lucide-react-taro/icons/clock';
-import { MessageCircle as MessageCircleIcon } from 'lucide-react-taro/icons/message-circle';
-import { ChevronRight as ChevronRightIcon } from 'lucide-react-taro/icons/chevron-right';
-import { Settings as SettingsIcon } from 'lucide-react-taro/icons/settings';
+import { Bell as BellIcon, CircleAlert as CircleAlertIcon, CircleCheck as CircleCheckIcon, Clock as ClockIcon, MessageCircle as MessageCircleIcon, ChevronRight as ChevronRightIcon, Settings as SettingsIcon } from 'lucide-react-taro';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import './index.css';
