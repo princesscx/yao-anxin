@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/records/index",
+    "pages/messages/index",
+    "pages/profile/index",
+    "pages/device/index",
+    "pages/alarm/index",
+    "pages/medicine/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#10B981",
+    "navigationBarTitleText": "药安心",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#6B7280",
+    "selectedColor": "#10B981",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./src/assets/tabbar/home.png",
+        "selectedIconPath": "./src/assets/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/records/index",
+        "text": "记录",
+        "iconPath": "./src/assets/tabbar/records.png",
+        "selectedIconPath": "./src/assets/tabbar/records-active.png"
+      },
+      {
+        "pagePath": "pages/messages/index",
+        "text": "消息",
+        "iconPath": "./src/assets/tabbar/bell.png",
+        "selectedIconPath": "./src/assets/tabbar/bell-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "./src/assets/tabbar/profile.png",
+        "selectedIconPath": "./src/assets/tabbar/profile-active.png"
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "coze-mini-program",
-  "description": "test",
+  "projectname": "yao-anxin",
+  "description": "药安心-智慧用药监管服务",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
@@ -12,5 +12,9 @@
     "minified": false
   },
   "compileType": "miniprogram",
-  "packOptions": { "ignore": [{ "type": "folder", "value": "./assets" }] }
+  "packOptions": {
+    "ignore": [
+      { "type": "folder", "value": "./assets" }
+    ]
+  }
 }
